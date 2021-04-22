@@ -14,7 +14,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/_Labs/02-SNAPS/02-SNAPS.unity
     guid: c49e59542282f496181b161b92921a27
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Labs/03-Terrain/03-Terrain.unity
     guid: 582764cd13a824e96aeeddfa287eccee
+  - enabled: 1
+    path: Assets/_Labs/05-Audio/05-Audio.unity
+    guid: 3a8b5b36541a62e4f8088e5000e0b818
   m_configObjects: {}
