@@ -559,6 +559,9 @@ MonoBehaviour:
   audioS: {fileID: 495634412}
   idleSnapshot: {fileID: 24500006, guid: 54af7e1fd53d5b84ead876721c876722, type: 2}
   auxInSnapshot: {fileID: -398405126326702536, guid: 54af7e1fd53d5b84ead876721c876722, type: 2}
+  enemyMask:
+    serializedVersion: 2
+    m_Bits: 1024
 --- !u!82 &495634412 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 82025755003314540, guid: dd51aa0141228c3478f60d3fe5ba00eb, type: 3}
