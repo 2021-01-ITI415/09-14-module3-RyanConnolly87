@@ -65,7 +65,7 @@ AudioMixerController:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: MainMusic
-  m_OutputGroup: {fileID: 0}
+  m_OutputGroup: {fileID: 24300002, guid: 0936f805805673848ba3be00e5ae9288, type: 2}
   m_MasterGroup: {fileID: 24300002}
   m_Snapshots:
   - {fileID: 24500006}
@@ -84,7 +84,7 @@ AudioMixerController:
     - 314e7f19f9dba3e41b9dda83d7955894
     name: View
   m_CurrentViewIndex: 0
-  m_TargetSnapshot: {fileID: 24500006}
+  m_TargetSnapshot: {fileID: -398405126326702536}
 --- !u!243 &24300002
 AudioMixerGroupController:
   m_ObjectHideFlags: 0
