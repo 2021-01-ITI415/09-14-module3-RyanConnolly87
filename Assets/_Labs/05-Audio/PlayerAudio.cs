@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class PlayerAudio : MonoBehaviour
 {
@@ -9,11 +10,18 @@ public class PlayerAudio : MonoBehaviour
 
     public AudioSource audioS;
 
+    public AudioMixerSnapshot idleSnapshot;
+    public AudioMixerSnapshot auxInSnapshot;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Water"))
         {
             audioS.PlayOneShot(splashSound);
+        }
+        if (other.CompareTag("EnemyZone"))
+        {
+            auxInSnapshot.TransitionTo(0.5f);
         }
     }
     private void OnTriggerExit(Collider other)
@@ -22,17 +30,11 @@ public class PlayerAudio : MonoBehaviour
         {
             audioS.PlayOneShot(splashSound);
         }
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (other.CompareTag("EnemyZone"))
+        {
+            idleSnapshot.TransitionTo(0.5f);
+        }
     }
 }
+
+    
