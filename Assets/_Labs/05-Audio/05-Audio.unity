@@ -331,6 +331,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 341472163}
+  - component: {fileID: 341472164}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -355,6 +356,21 @@ Transform:
   m_Father: {fileID: 1153568535}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &341472164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 341472162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a92bf2e5ac80e704895b8ab2f17be358, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainMusic: {fileID: 76273733}
+  auxMusic: {fileID: 925117508}
+  ambSound: {fileID: 1138280134}
 --- !u!1001 &370430048
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1158,7 +1174,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1050960935}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.2, y: -0.07, z: -17.72}
+  m_LocalPosition: {x: -0.2, y: -0.07, z: -38.77}
   m_LocalScale: {x: 5.18, y: 9.94, z: 5.35}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2080,9 +2096,10 @@ GameObject:
   - component: {fileID: 1579210860}
   - component: {fileID: 1579210859}
   - component: {fileID: 1579210858}
+  - component: {fileID: 1579210863}
   m_Layer: 0
-  m_Name: Cube (1)
-  m_TagString: EnemyZone
+  m_Name: SwitchTrackCube
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2179,6 +2196,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1579210863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579210857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ffb40e10a196dd4f92956eb9928846e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainMusicClip: {fileID: 8300000, guid: b824b703f619e424cbf03ec16bf0bcb7, type: 3}
+  auxMusicClip: {fileID: 8300000, guid: d6092572d074c094480c1bc7166180dc, type: 3}
 --- !u!1 &1579294950 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1222194124729824, guid: a8d3fcab2b67056498a80532b2542465, type: 3}
