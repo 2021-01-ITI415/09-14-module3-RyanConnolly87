@@ -11,6 +11,7 @@ TagManager:
   - WoodFloor
   - HardFloor
   - GrassFloor
+  - PickUp
   layers:
   - Default
   - TransparentFX
